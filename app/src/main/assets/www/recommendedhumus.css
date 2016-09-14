@@ -1,0 +1,106 @@
+#main {
+    height: calc(100% - 78px);
+    text-align: center;
+}
+
+#tabs {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    //text-align: center;
+}
+
+#mymap, #pAddHumusPlace, #pSearch {
+    position : absolute !important;
+    margin: 0;
+    padding: 0;
+    top : 0;
+    right : 0;
+    bottom : 0 !important;
+    left : 0 !important;
+    //text-align: center;
+}
+
+
+#iw-container .iw-title {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #48b5e9;
+    color: white;
+    margin: 1px;
+    border-radius: 2px 2px 0 0; /* In accordance with the rounding of the default infowindow corners. */
+}
+
+.ui-listview > .ui-li-static, .ui-listview > .ui-li-divider, .ui-listview > li > a.ui-btn {
+    text-align: right;
+    direction: rtl;
+}
+
+#spinner{
+    background-image: url("img/ajax-loader.gif");
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.humusDetails li{
+    line-height: 1.8em;
+}
+
+.rtl {
+    text-align: right;
+    direction: rtl;
+}
+
+.inline-form {
+}
+
+.inline-form .wrapper {
+    float: left;
+    width: 100%;
+}
+
+.inline-form .wrapper .content {
+    margin: 0 75px 0 92px;  /* 0 RC 0 LC */
+}
+
+.inline-form .left {
+    float: left;
+    width: 92px; /* LC */
+    margin-left: -100%;
+}
+
+.inline-form .text {
+    padding-top: 0.7em;
+    /*padding-bottom: 0.7em;
+    display: block;
+    font-size: 16px;*/
+}
+
+.inline-form .right {
+    float: left;
+    width: 75px; /* RC */
+    margin-left: -75px; /* -RC */
+}
+
+/*@media (min-width:1025px){
+    .ui-filterable{
+        max-width: 350px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    #list {
+        max-width: 800px;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+}*/
