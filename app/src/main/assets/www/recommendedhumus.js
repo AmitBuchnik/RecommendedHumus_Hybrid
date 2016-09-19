@@ -406,7 +406,14 @@ class HumusPlacesList {
 
                 // yes
                 $('#btnAddedYes').one('click', function () {
-                    let id = places.length;
+                    let maxId = 0;
+                    places.forEach(p => {
+                        if (p.id > maxId) {
+                            maxId = p.id;
+                        }
+                    });
+
+                    let id = maxId + 1;
                     let p = new HumusPlace(id,
                         newPlaceName,
                         city,
@@ -561,7 +568,7 @@ $(document).on('pageshow' ,function () {
     $('#tabs').on('tabsactivate', function (event, ui) {
        switch (ui.newTab.index()) {
            case 0: // map
-                $('#mymap').gmap('refresh');
+               $('#mymap').gmap('refresh');
                break;
            case 1: // add
                break;
